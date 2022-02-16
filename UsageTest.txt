@@ -1,0 +1,25 @@
+ TEST FILE
+ Tests "Menu/Modes" (1.1 - 1.6) In Traceability matrix
+ Author - Austin Bevacqua
+ Date - 29/10/20
+
+------------|------------------------------------------------------------------------------------
+   Test #   |  Parameters to run program                 |  Expected result   | Actual Result
+------------| -----------------------------------------------------------------------------------
+    1.1     | "java cryptoGraph"                         | Usage Information  | Usage Information
+    1.2     | "java cryptoGraph -i  foo foo foo foo"     | Usage Information  | Usage Information
+    1.3     | "java cryptoGraph -r assetdata.json        | Report Mode        | Report Mode
+                tradedata.json"
+    1.3     | "java cryptoGraph -r assetdata.json        | Report Mode        | Report Mode
+               tradedata.json asset_info.csv"
+    1.4     | "java cryptoGraph -r tradedata.json        | Error -            | Error -
+                assetdata.json                              Incorrect files      Incorrect files
+    1.4     | "java cryptoGraph -r assetdata.json        | Error -            | Error -
+                foo bar                                     Incorrect files      Incorrect files
+    1.4     | "java cryptoGraph -r assetdata.json        | Error -            | Error -
+                asset_info.csv tradedata.json               Incorrect files      Incorrect files
+  1.5/1.6   | "java cryptoGraph -i"                      | Interactive Mode   | Interactive Mode
+---------------------------------------------------------------------------------------------------
+
+Passed 8/8 Tests
+

@@ -1,0 +1,41 @@
+ TEST FILE
+ Tests the Menu class
+ Author - Austin Bevacqua
+ Date - 30/10/20
+
+ Reason for .txt file instead of unit test:
+    - The menu class is highly dependent on user input to navigate through. This makes it difficult to automate
+      testing, so manual testing has been conducted and compared to expected results.
+
+NOTES:
+    - Criteria for passing:
+            - Correct output: The method outputs the correct information to the screen
+            - Error Handling: The method deals with incorrect file names, asset names, int out of range, ect...
+            - User Interaction: The user can interact with the method in a predictable and consistent way.
+
+LEGEND:
+    P: Passed Test
+    -: not applicable
+    F: Failed Test
+
+------------------------------------------------------------------------------------------------
+Function                         |    Correct Output    |   Error Handling  |  User Interaction
+---------------------------------------------------------------------------------------------------
+mainMenu                         |           P          |        P          |       P
+printMenuHeader                  |           P          |        -          |       -
+fileImportMenu                   |           P          |        P          |       P
+displayAssetMenu                 |           P          |        P          |       P
+checkNetwork                     |           P          |        P          |       -
+displayTradeMenu                 |           P          |        P          |       P
+tradePathMenu                    |           P          |        P          |       P
+printAllPaths                    |           P          |        P          |       -
+printAllPathsPrice               |           P          |        P          |       -
+printTopPaths                    |           P          |        P          |       -
+assetFilterMenu                  |           P          |        P          |       P
+assetOverview                    |           P          |        P          |       P
+tradeOverview                    |           P          |        P          |       P
+saveMenu                         |           F          |        F          |       F
+--------------------------------------------------------------------------------------------------
+
+Passed 13/14 Tests
+

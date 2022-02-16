@@ -1,0 +1,37 @@
+ TEST FILE
+ Tests the SortData class
+ Author - Austin Bevacqua
+ Date - 30/10/20
+Records the results of the UnitTestSortData.java
+
+ Reason for .txt file instead of unit test:
+    - The class is highly coupled to the overall structure of the project. Each method relies on a graph already
+    being fully constructed with additional trade or asset information. It would be difficult to automate these
+    tests, so I have manually conducted tests on each method to compare the expected output with real output.
+
+NOTES:
+    - All tests were ran with the files assetdata.json, tradedata.json and asset_info.csv being imported into a graph.
+    - Tests passing will be based on three criteria:
+        - The output is in the correct format (Descending numbers followed by value)
+        - The output is in the correct order (Largest data first, smallest last)
+        - The output displays the correct data (The largest data in the entire dataset)
+
+LEGEND:
+    P: Passed Test
+    F: Failed Test
+------------------------------------------------------------------------------------------------
+Function                         |    Correct Format    |   Correct Order   |  Correct Data
+---------------------------------------------------------------------------------------------------
+tradebyPrice                     |           P          |        P          |       P
+tradebyPriceChange               |           P          |        P          |       P
+tradebyPriceChangePercent        |           P          |        P          |       P
+tradebyVolume                    |           P          |        P          |       P
+tradebyCount                     |           P          |        P          |       P
+assetbyPrice                     |           P          |        P          |       P
+assetbyPriceChange               |           P          |        P          |       P
+assetbyVolume                    |           P          |        P          |       P
+assetbyCap                       |           P          |        P          |       P
+--------------------------------------------------------------------------------------------------
+
+Passed 9/9 Tests
+

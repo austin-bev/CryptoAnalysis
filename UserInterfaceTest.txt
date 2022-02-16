@@ -1,0 +1,22 @@
+ TEST FILE
+ Tests the UserInterface class
+ Author - Austin Bevacqua
+ Date - 29/10/20
+
+ Reason for .txt file instead of unit test:
+    - The algorithm deals with user input and output, making it difficult to unit test. Instead, tests have been
+    manually conducted and compared to expected results
+
+------------------------------------------------------------------------------------------------
+Function           |    Parameters   |   Input         |  Expected Output       |   Actual Output
+---------------------------------------------------------------------------------------------------
+userInput (Int)    | 1 , 4, "Prompt" |   3             |      3                 |  3
+userInput (Int)    | 1 , 4, "Prompt" |   5             |   "Try again"          |  "Try again"
+userInput (Int)    | 1 , 4, "Prompt" |   "FOO"         |   "Incorrect Format"   |  "Incorrect Format"
+userInput (Int)    | 1 , 4, "Prompt" |   4.4           |   "Incorrect Format"   |  "Incorrect Format"
+userInput (String) | "Prompt"        | "FOO"           |   "FOO"                |  "FOO"
+displayError       | "Wrong File"    |     -           |   "ERROR: Wrong File"  |  "ERROR: Wrong File"
+println            | "Prompt"        |     -           |   "Prompt"             |  "Prompt"
+
+Passed 7/7 Tests
+
