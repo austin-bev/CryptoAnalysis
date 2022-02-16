@@ -1,4 +1,4 @@
-This was my submission for the final assessment of COMP1002 (v.1) Data Structures and Algorithms. The task was to create a program which imported and then parsed graph data using data structures. My final mark was 99%
+This was my submission for the final assessment of COMP1002 (v.1) Data Structures and Algorithms (2021). The task was to create a program which imported and then parsed graph data using data structures. My final mark was 99%
 
 Introduction: 
     The CryptoGraph algorithms main functionality involves reading in various files related to Cryptocurrency, performing analysis and displaying the results to the screen.
